@@ -28,10 +28,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">1. uzdevums</a></li>
+							<!--<li><a href="#first">First Section</a></li>-->
+							<li><a href="#second">Teksta lasīšana</a></li>
+							<!--<li><a href="#cta">Get Started</a></li>-->
 						</ul>
 					</nav>
 
@@ -43,20 +43,68 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>Izvēlies pareizo vārdu</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
+										
+										<label for="uzd1">Šodien ārā ir ļoti </label>
+										<select name="uzd1" id="uzd1" onchange="checkAnswer1()">
+										  <option value="" disabled selected hidden>-----</option>
+										  <option value="correct">auksts</option>
+										  <option value="incorrect">augsts</option>
+										</select> 
+										<span id="result1"></span>
+										<script>
+											function checkAnswer1() {
+											  // Get the value of the selected option in the dropdown
+											  var selectedOption = document.getElementById("uzd1").value;
+									  
+											  // Check if the selected option is the correct answer
+											  if (selectedOption == "correct") {
+												// Set the text of the result element to "Correct!"
+												document.getElementById("result1").innerHTML = "Pareizi!";
+											  } else {
+												// Set the text of the result element to "Incorrect. Try again."
+												document.getElementById("result1").innerHTML = "Nepareizi.";
+												}
+											}
+										</script>
+										<br><br>
+										<label for="uzd2">Man patīk lasīt</label>
+										<select name="uzd2" id="uzd2" onchange="checkAnswer2()">
+										  <option value="" disabled selected hidden>-----</option>
+										  <option value="incorrect">seriālus</option>
+										  <option value="correct">grāmatas</option>
+										  <option value="incorrect">video spēles</option>
+										</select> 
+										<span id="result"></span>
+										<br>
+										
+										<script>
+											function checkAnswer2() {
+											  // Get the value of the selected option in the dropdown
+											  var selectedOption = document.getElementById("uzd2").value;
+									  
+											  // Check if the selected option is the correct answer
+											  if (selectedOption == "correct") {
+												// Set the text of the result element to "Correct!"
+												document.getElementById("result").innerHTML = "Pareizi!";
+											  } else {
+												// Set the text of the result element to "Incorrect. Try again."
+												document.getElementById("result").innerHTML = "Nepareizi.";
+												}
+											}
+										</script>										
+										<br><br>
+										<!--<ul class="actions">
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
+									-->
 									</div>
 									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 								</div>
 							</section>
-
-						<!-- First Section -->
+<!--
+						First Section
 							<section id="first" class="main special">
 								<header class="major">
 									<h2>Magna veroeros</h2>
@@ -84,13 +132,13 @@
 									</ul>
 								</footer>
 							</section>
-
+-->
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<p>Donec <abbr title="paskaidrojums">imperdiet</abbr> consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa <abbr title="paskaidrojums">urna</abbr>, fermentum eget quam aliquet.</p>
 								</header>
 								<ul class="statistics">
 									<li class="style1">
@@ -114,7 +162,7 @@
 										<strong>1,024</strong> Nullam
 									</li>
 								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<p class="content">Nam elementum <abbr title="paskaidrojums">nisl</abbr> et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>
@@ -122,7 +170,7 @@
 								</footer>
 							</section>
 
-						<!-- Get Started -->
+						<!-- Get Started 
 							<section id="cta" class="main special">
 								<header class="major">
 									<h2>Congue imperdiet</h2>
@@ -136,7 +184,7 @@
 									</ul>
 								</footer>
 							</section>
-
+-->
 					</div>
 
 				<!-- Footer -->

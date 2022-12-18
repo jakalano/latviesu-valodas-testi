@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="javascript.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -69,16 +70,15 @@
 											}
 										</script>
 										<br><br>
-										<label for="uzd2">Man patīk lasīt</label>
+										<label for="uzd2">Es vakar _____ labu grāmatu</label>
 										<select name="uzd2" id="uzd2" onchange="checkAnswer2()">
 										  <option value="" disabled selected hidden>-----</option>
-										  <option value="incorrect">seriālus</option>
-										  <option value="correct">grāmatas</option>
-										  <option value="incorrect">video spēles</option>
+										  <option value="incorrect">nolasīju</option>
+										  <option value="correct">izlasīju</option>
+										  <option value="incorrect">salasīju</option>
 										</select> 
-										<span id="result"></span>
-										<br>
-										
+										<span id="result2"></span>
+																
 										<script>
 											function checkAnswer2() {
 											  // Get the value of the selected option in the dropdown
@@ -87,10 +87,10 @@
 											  // Check if the selected option is the correct answer
 											  if (selectedOption == "correct") {
 												// Set the text of the result element to "Correct!"
-												document.getElementById("result").innerHTML = "Pareizi!";
+												document.getElementById("result2").innerHTML = "Pareizi!";
 											  } else {
 												// Set the text of the result element to "Incorrect. Try again."
-												document.getElementById("result").innerHTML = "Nepareizi.";
+												document.getElementById("result2").innerHTML = "Nepareizi.";
 												}
 											}
 										</script>										
@@ -99,6 +99,12 @@
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
 									-->
+									<form>
+										Es rīt [SPĒLĒT] <input type="text" id="favoriteFood"> futbolu.
+										<input type="button" value="Submit" onclick="checkFood()">
+									  </form> 
+									  
+									<p id="result"></p>
 									</div>
 									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 								</div>
@@ -137,8 +143,12 @@
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Ipsum consequat</h2>
-									<p>Donec <abbr title="paskaidrojums">imperdiet</abbr> consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa <abbr title="paskaidrojums">urna</abbr>, fermentum eget quam aliquet.</p>
+									
+									<p>Click on the <span class="tooltip">word<span class="tooltiptext">Tooltip text 1</span></span> to trigger the overlay.</p>
+									<br>
+									
+									<p>Donec <span class="tooltip">imperdiet<span class="tooltiptext">Tooltip text 2</span></span> consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa <span class="tooltip">urna<span class="tooltiptext">Tooltip text, but make it really long Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. </span></span>, fermentum eget quam aliquet.</p>
 								</header>
 								<ul class="statistics">
 									<li class="style1">
@@ -162,7 +172,7 @@
 										<strong>1,024</strong> Nullam
 									</li>
 								</ul>
-								<p class="content">Nam elementum <abbr title="paskaidrojums">nisl</abbr> et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>

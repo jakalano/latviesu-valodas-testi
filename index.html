@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Latviešu valodas uzdevumi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,19 +20,18 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<span class="logo"><img src="images/icon.png" alt="" /></span>
+						<h1>Latviešu valodas uzdevumi</h1>
+						
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">1. uzdevums</a></li>
-							<!--<li><a href="#first">First Section</a></li>-->
+							<li><a href="#intro" class="active">22. nodaļas atkārtojums</a></li>
+							<!--<li><a href="#first">First Section</a></li>
 							<li><a href="#second">Teksta lasīšana</a></li>
-							<!--<li><a href="#cta">Get Started</a></li>-->
+							<li><a href="#cta">Get Started</a></li>-->
 						</ul>
 					</nav>
 
@@ -44,9 +43,9 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Izvēlies pareizo vārdu</h2>
+											<h2>1. uzdevums. Raksti refleksīvos vārdus pareizā formā!</h2>
 										</header>
-										
+										<!--
 										<label for="uzd1">Šodien ārā ir ļoti _______</label>
 										<select name="uzd1" id="uzd1" onchange="checkAnswer1()">
 										  <option value="" disabled selected hidden>-----</option>
@@ -95,18 +94,19 @@
 											}
 										</script>										
 										<br><br>
-										<!--<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
+										
 									-->
-									<form>
-										Es rīt [SPĒLĒT] futbolu. <input type="text" id="favoriteFood">
-										<input type="button" value="Submit" onclick="checkFood()">
-									  </form> 
+									<form onsubmit="return false;">
+										<div id="question">1. Mana māsa ________  (krāsoties) katru dienu.</div>
+										<input type="text" id="tekstaUzd">
+										<input type="submit" value="Submit" onclick="checkTekstaUzd()">
+									</form> 
 									  
 									<p id="result"></p>
+									<a href="javascript:void(0)" id="next" style="display: none;">Nākamais jautājums</a>
+									<!--
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>-->
 								</div>
 							</section>
 <!--
@@ -139,7 +139,7 @@
 								</footer>
 							</section>
 -->
-						<!-- Second Section -->
+						<!-- 
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>Ipsum consequat</h2>
@@ -179,7 +179,7 @@
 									</ul>
 								</footer>
 							</section>
-
+-->
 						<!-- Get Started 
 							<section id="cta" class="main special">
 								<header class="major">
@@ -199,6 +199,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
+						<!---
 						<section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
@@ -223,7 +224,7 @@
 								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
-						</section>
+						</section>-->
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
